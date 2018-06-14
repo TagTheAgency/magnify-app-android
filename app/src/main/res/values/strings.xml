@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Magnify</string>
+    <string name="poweredByGaze">Powered by GAZE</string>
 </resources>

@@ -34,7 +34,10 @@ public class ShowVideoActivity extends AppCompatActivity {
         VrVideoView videoView = (VrVideoView) findViewById(R.id.video_view);
         try {
             Uri uri = Uri.parse(url);
-            videoView.loadVideo(uri, new VrVideoView.Options());
+            System.out.println("Loading video "+url);
+            videoView.loadVideo(uri, null);//new VrVideoView.Options());
+            System.out.println("Playing video");
+            videoView.playVideo();
         } catch (IOException e) {
             e.printStackTrace();
         }

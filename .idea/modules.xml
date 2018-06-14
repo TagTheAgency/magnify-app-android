@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Magnify.iml" filepath="$PROJECT_DIR$/Magnify.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/magnify-app-android.iml" filepath="$PROJECT_DIR$/magnify-app-android.iml" />
     </modules>
   </component>
 </project>

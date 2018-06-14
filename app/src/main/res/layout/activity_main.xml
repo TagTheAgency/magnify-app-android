@@ -44,7 +44,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/header"
+                android:id="@+id/headerGaze"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
@@ -52,7 +52,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/header" />
+                app:srcCompat="@drawable/header_gaze" />
 
             <TableLayout
                 android:id="@+id/tableLayout"
@@ -67,7 +67,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/header"
+                app:layout_constraintTop_toBottomOf="@+id/headerGaze"
                 app:layout_constraintVertical_bias="0.0">
 
                 <TableRow

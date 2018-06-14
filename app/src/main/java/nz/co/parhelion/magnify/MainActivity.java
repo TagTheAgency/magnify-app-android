@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
             photoImage.requestLayout();
             photoImage.setScaleType(ImageView.ScaleType.CENTER_CROP);
             Ion.with(photoImage)
-                .placeholder(R.drawable.magnifylogo)
+                .placeholder(R.drawable.magnify_logo)
 //                .error(R.drawable.error_image)
 //                .animateLoad(spinAnimation)
 //                .animateIn(fadeInAnimation)
@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
 
             logo.setLayoutParams(logoParams);
             Ion.with(logo)
-                    .placeholder(R.drawable.magnifylogo)
+                    .placeholder(R.drawable.magnify_logo)
 //                .error(R.drawable.error_image)
 //                .animateLoad(spinAnimation)
 //                .animateIn(fadeInAnimation)

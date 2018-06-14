@@ -1,8 +1,11 @@
 package nz.co.parhelion.magnify;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
+import android.os.Build;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -34,9 +37,9 @@ public class ShowVideoActivity extends AppCompatActivity {
         VrVideoView videoView = (VrVideoView) findViewById(R.id.video_view);
         try {
             Uri uri = Uri.parse(url);
-            System.out.println("Loading video "+url);
             videoView.loadVideo(uri, null);//new VrVideoView.Options());
-            System.out.println("Playing video");
+
+
             videoView.playVideo();
         } catch (IOException e) {
             e.printStackTrace();

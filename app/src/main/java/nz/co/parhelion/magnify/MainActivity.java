@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -79,6 +80,20 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
+
+        ImageView img = (ImageView)findViewById(R.id.headerGaze);
+        img.setClickable(true);
+
+        img.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://gaze.tagtheagency.com/"));
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -178,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
                 .load(video.getPhoto());
 
 
-            ImageView logo = new ImageView(this);
+/*            ImageView logo = new ImageView(this);
             RelativeLayout.LayoutParams logoParams = new RelativeLayout.LayoutParams(logoWidth, logoHeight);
             logoParams.addRule(RelativeLayout.CENTER_VERTICAL);
             logoParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
@@ -186,10 +201,8 @@ public class MainActivity extends AppCompatActivity {
             logo.setLayoutParams(logoParams);
             Ion.with(logo)
                     .placeholder(R.drawable.magnify_logo)
-//                .error(R.drawable.error_image)
-//                .animateLoad(spinAnimation)
-//                .animateIn(fadeInAnimation)
                     .load(video.getLogo());
+                    */
 
 
             final VRVideo videoToShow = video;
@@ -208,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
             rowHolder.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT));
 
             rowHolder.addView(photoImage);
-            rowHolder.addView(logo);
+            //rowHolder.addView(logo);
 
             row.addView(rowHolder);
 

@@ -3,44 +3,30 @@ package nz.co.parhelion.magnify;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.net.Uri;
-import android.os.Message;
-import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.util.JsonReader;
 import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
 import com.koushikdutta.ion.Response;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.lang.reflect.Type;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.ArrayList;
 import java.util.List;
 
 import nz.co.parhelion.magnify.model.VRVideo;
-import nz.co.parhelion.magnify.utils.DownloadImageTask;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -150,10 +136,10 @@ public class MainActivity extends AppCompatActivity {
         int width = metrics.widthPixels;
 
         int imageWidth = (int)(width * .7);
-        int imageHeight = (int) (imageWidth / 2);
+        int imageHeight = imageWidth / 2;
 
-        int logoWidth = (int)(width * .2);
-        int logoHeight = logoWidth;
+        //int logoWidth = (int)(width * .2);
+        //int logoHeight = logoWidth;
 
         layout.setColumnShrinkable(0, true);
         int ROW_HEIGHT = 600;

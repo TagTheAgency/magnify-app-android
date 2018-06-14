@@ -1,11 +1,8 @@
 package nz.co.parhelion.magnify;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
-import android.os.Build;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -13,9 +10,6 @@ import android.widget.TextView;
 import com.google.vr.sdk.widgets.video.VrVideoView;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
-import java.net.URL;
 
 public class ShowVideoActivity extends AppCompatActivity {
 
